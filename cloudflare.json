@@ -4,6 +4,7 @@
     "keywords" : [
         "nodejs"
     ],
+    "category":["My Category"],
     "version": "0.0.1",
     "contributors": [
         {
