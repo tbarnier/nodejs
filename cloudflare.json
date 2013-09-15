@@ -1,0 +1,63 @@
+{
+    "name": "NodeJS Example",
+    "description": "",
+    "keywords" : [
+        "nodejs"
+    ],
+    "version": "0.0.1",
+    "contributors": [
+        {
+            "name" : "Thierry Barnier",
+            "email" : "tbarnier@gmail.com"
+        },
+        
+    ],
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/tbarnier/nodejs/new/master.git"
+    },
+    "main" : "./public/",
+    "dependencies" : {
+        "jquery"    :  "*",
+        "raphael"   :  "0.1.x",
+        "modernizr" :  "~0.2"
+    },
+    "licenses" : [
+        {
+            "type": "tos",
+            "url": "http://tos.example.com"
+        }
+    ],
+    "implements" : "AMD",
+    "bugs": {
+        "mail": "dev@example.com",
+        "web": "http://www.example.com/bugs" 
+    },
+    "scripts" : {
+        "build": "cfpm build",
+        "test": "vows --spec --isolate"
+    },
+    "config" : {
+        
+        "payment": {},
+        "interface": [
+            {
+                "name": "Badge Position",
+                "id": "position_x",
+                "required": true,
+                "description": "which side of the screen should your badge be displayed on?",
+                "type": "select",
+                "options": [
+                    {
+                        "label": "Top Right",
+                        "value": "right"
+                    },
+                    {
+                        "label": "Top Left",
+                        "value": "left"
+                    }
+                ]
+            }
+        ]
+    }
+}
